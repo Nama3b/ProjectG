@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html, body{
+  font-family: 'Kanit', sans-serif !important;
+  background: #272934 !important;
+  font-size: 20px !important;
+}
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: #1f2129;
+}
+
+::-webkit-scrollbar
+{
+  width: 9px;
+  background-color: #101217;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #585858;
+  width: 9px;
+  border-radius: 5px;
+}
+
+.logo a.logo-img{
+  padding: 0;
+}
+.sidebar {
+  	padding-top: 85px;
+  	height: 100%;
+  	width: 250px;
+  	position: fixed;
+  	z-index: 0;
+  	top: 0;
+  	left: 0;
+  	background-color: #1f2129;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+}
+.sidebar .d-flex {
+  	padding: 13px 8px 13px 30px;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(0);
+}
+.sidebar a{
+  	text-decoration: none;
+  	font-size: 19px;
+  	color: #818181;
+}
+.sidebar a.textside{
+  	padding-left: 12px;
+}
+.sidebar .d-flex:hover {
+    transform: translateX(15px);
+}
+.sidebar a:hover{
+  	color: #f1f1f1;
+  	text-decoration: none;
+}
+.sidebar a:focus{
+  	color: #f1f1f1;
+  	text-decoration: none;
+}
+.sidebar .closebtn {
+  	position: absolute;
+  	top: 0;
+  	right: 25px;
+  	font-size: 29px;
+  	margin-left: 50px;
+  	color: #818181;
+}
+.sidebar .closebtn:hover{
+    transform: translateX(0);
+}
+.sidebar i{
+	font-size: 22px;
+	padding-right: 9px;
+}
+.sidebar h5{
+	color: white;
+	margin: 15px 0 15px 15px;
+}
+.sidebar hr{
+	margin: 0;
+	border-bottom: 1px solid grey;
+}
+
+/* ============================= HEADER ============================= */
+
+#main{
+	margin-left: 250px;
+	margin-top: 78px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+}
+.header-section{
+	display: flex;
+	background: #1f2129;
+	padding: 15px 0;
+}
+.header-left .openbtn{
+	background: none;
+	color: white;
+	border: none;
+	font-size: 25px;
+  padding: 0 15px;
+  margin-right: 18px;
+}
+.header-center .form-search input{
+	background: #313442;
+	width: 80%;
+  height: 48px;
+	color: white;
+	border: none;
+	padding: 5px 5px 5px 29px;
+	margin-left: 15px;
+}
+.header-center i{
+  color: white;
+	border: none;
+  padding: 14px 20px;
+  position: absolute;
+  right: 73px;
+}
+.logo{
+    margin: 10px 5px 5px 42px;
+}
+.logo .closebtn{
+	color: white !important;
+}
+.header-right{
+	display: flex;
+	justify-content: right;
+  align-items: center;
+	padding-right: 29px !important;
+}
+.header-right i{
+	color: white;
+}
+.header-right i.fa-buromobelexperte{
+  font-size: 29px;
+}
+.header-right .noti-icon i{
+  font-size: 29px;
+	padding: 8px 15px 0 0;
+}
+.header-right button{
+	border-radius: 50%;
+	padding: 3px;
+}
+.header-right img{
+	border-radius: 50%;
+}
+.dropdown .dropdown-menu{
+	margin-left: -121px;
+	margin-top: 20px;
+	background: #17181e;
+}
+.dropdown-menu a{
+	color: #919395 !important;
+}
+.dropdown-menu hr{
+  margin: 5px 0;
+  border-bottom: 1px solid grey;
+}
+.dropdown-menu li:hover{
+  background: #313442 !important;
+}
+
+/* ============================= CAROUSEL ============================= */
+
+.carousel{
+  padding: 9px;
+}
+.carousel-indicators{
+  width: fit-content;
+  justify-content: right !important;
+  left: 229px !important;
+  bottom: 29px !important;
+}
+.carousel-indicators div.active{
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0px 0px 15px whitesmoke;
+}
+.carousel-target{
+  margin: 0 5px !important;
+  cursor: pointer;
+}
+.carousel-target img{
+  height: 50px;
+  width: 100px;
+}
+.carousel-inner img{
+  height: 460px;
+}
+.carousel-caption{
+  top: 37px;
+  left: 7% !important;
+  right: 34% !important;
+  text-align: left !important;
+}
+.carousel-caption h1{
+  font-weight: bold;
+}
+.caption-detail a{
+  color: white;
+}
+.caption-detail a:hover{
+  text-decoration: none;
+}
+
+
+/* ============================= CHANNEL-PROFILE ============================= */
+
+.channel-profile{
+  margin-top: 15px;
+}
+.channel-profile .row{
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+.channel-profile img{
+  width: 66px;
+  height: 66px;
+}
+.channel-info{
+  color: #818181;
+  margin-left: 15px;
+}
+.channel-info h4{
+  color: white;
+}
+
+/* ============================= BODY ============================= */
+
+.body-section{
+	margin: 15px;
+	padding: 15px;
+	background: #0f0f0f;
+	color: #919395;
+}
+.body-section .col-4 a{
+    color: #919395 !important;
+}
+.body-section .col-4 a{
+  color: #919395;
+  text-decoration: none;
+}
+.jumbotron{
+	background: #313442 !important;
+	padding: 30px;
+	margin: 10px;
+}
+.jumbotron h2{
+	color: white;
+}
+
+.body-section hr{
+  width: 100%;
+  border-bottom: 0.5px solid grey;
+  margin: 20px 0;
+}
+.top-live-game, .playstation-game, .recommended-game, .top-trending-game, .lol-game{
+  width: 100%;
+}
+.title{
+  display: flex;
+}
+.title h5{
+  color: white;
+}
+.title a{
+  color: skyblue;
+}
+.title a:hover{
+  text-decoration: none;
+}
+.game-body-section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px 5px;
+}
+.game-item img{
+  width: 100%;
+}
+.game-item h6{
+  color: white;
+  margin-bottom: 0;
+}
+.game-item small{
+  color: #919395;
+}
+.lol-game a:hover{
+  text-decoration: none;
+}
+.top-trending-game a:hover{
+  text-decoration: none;
+}
+.recommended-game a:hover{
+  text-decoration: none;
+}
+.playstation-game a:hover{
+  text-decoration: none;
+}
+
+
+

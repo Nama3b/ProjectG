@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!--=============== FAVICON ===============-->
+	    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+	    <!--=============== CSS ===============-->
+	    <link rel="stylesheet" href="assets/css/style.css">
+  		<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+	  	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	  	<!--=============== GOOGLE ICON ===============-->
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <title>Project G</title>
+	</head>
+	<body>
+		<div id="mySidebar" class="sidebar">
+		  	<div class="d-flex"><a href="#"><i class="fas fa-home mr-2"></i></a><a href="" class="textside">Home</a></div>
+		  	<div class="d-flex"><a href="#"><i class="far fa-compass mr-2"></i></a><a href="" class="textside">Explore</a></div>
+		  	<div class="d-flex"><a href="#"><i class="fab fa-google-play mr-2"></i></a><a href="" class="textside">Watch</a></div>
+		  	<div class="d-flex"><a href="#"><i class="fas fa-th-list mr-2"></i></a><a href="" class="textside">List</a></div>
+		  	<div class="d-flex"><a href="#"><i class="fas fa-user-circle mr-2"></i></a><a href="" class="textside">User</a></div>
+		  	<hr>
+		  	<div class="d-flex"><a href="#"><i class="fas fa-align-justify mr-2 mt-1"></i></a><a href="" class="textside">Library</a></div>
+		  	<div class="d-flex"><a href="#"><i class="fas fa-stopwatch mr-2"></i></a><a href="" class="textside">History</a></div>
+		  	<hr>
+		  	<div class="d-flex"><a href="#"><i class="material-icons mr-2 mt-1">textsms</i></a><a href="" class="textside">Contact</a></div>
+		  	<div class="d-flex"><a href="#"><i class="far fa-question-circle mr-2 mt-1"></i></a><a href="" class="textside">Support</a></div>
+		  	<div class="d-flex"><a href="#"><i class="material-icons mr-2 mt-1">settings</i></a><a href="" class="textside">Setting</a></div>
+		</div>
+		<div class="header-section fixed-top">
+		  	<div class="header-left col-3 d-flex">
+		       	<button class="openbtn" onclick="openNav()">☰</button>
+		       	<img src="assets/img/logo.jpg" width="82px" alt="">
+		       	<div class="logo"><a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()"><i class="fas fa-angle-double-left"></i></a></div>
+		  	</div>
+		  	<div class="col-6 header-center text-center">
+		       	<div class="form-search">
+		          	<input type="text" placeholder="Search..." id="search">
+		        	<a href="">
+		        		<i class="fas fa-search" id="search-ic"></i>
+		        	</a>
+		        </div>
+		       </div>
+		    <div class="header-right col-3 d-flex">
+		    	<a href=""><i class="fab fa-buromobelexperte mr-3"></i></a>
+		       	<a href="" class="noti-icon"><i class="material-icons mr-1">notifications_none</i></a>
+		        <div class="dropdown">
+		          	<button class="btn btn-outline-light" type="button" data-toggle="dropdown">
+		           		<img src="assets/img/b5701597aecbaefeb4ca8c341ff5bff9.jpg" alt="" width="40px">
+		          	</button>
+		          	<i class="fas fa-caret-down"></i>
+		          	<ul class="dropdown-menu">
+		           		<li><a href="">Hellou, Namaeb!</a></li>
+		           		<li><a href="#">My profile</a></li>
+		           		<li><a href="#">Setting</a></li>
+		           		<hr>
+		           		<li><a href="{{URL::to('logout-action')}}">Logout</a></li>
+		          	</ul>
+		        </div>
+		      </div>
+		</div>
+		<div id="main">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-indicators">
+			    <div data-target="#carouselExampleIndicators" data-slide-to="0" class="carousel-target active"><img src="assets/img/wallpapersden.com_jinx-new-hd-league-of-legends_1336x768.jpg"/></div>
+			    <div data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel-target"><img src="assets/img/wallpapersden.com_octane-apex-legends_1366x768.jpg"/></div>
+			    <div data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel-target"><img src="assets/img/wallpapersden.com_elden-ring-hd-cool-gaming-concept-art_1366x768.jpg"/></div>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="assets/img/wallpapersden.com_jinx-new-hd-league-of-legends_1336x768.jpg" alt="First slide">
+			      <div class="carousel-caption">
+			      	<h1>League of Legends: The legend rise again</h1>
+			      	<div class="caption-detail"><a href="">Riot games</a> • 2.9m views • 7 days ago</div>
+			      	<button class="btn btn-outline-light mt-4"><i class="far fa-play-circle mr-2"></i>WATCH</button>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/img/wallpapersden.com_octane-apex-legends_1366x768.jpg" alt="Second slide">
+			      <div class="carousel-caption">
+			      	<h1>Apex Legends: The Next Evolution of Hero Shooter</h1>
+			      	<div class="caption-detail"><a href="">Electronic Arts</a> • 1.2m views • 5 days ago</div>
+			      	<button class="btn btn-outline-light mt-4"><i class="far fa-play-circle mr-2"></i>WATCH</button>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="assets/img/wallpapersden.com_elden-ring-hd-cool-gaming-concept-art_1366x768.jpg" alt="Third slide">
+			      <div class="carousel-caption">
+			      	<h1>Elden Ring</h1>
+			      	<div class="caption-detail"><a href="">From Software</a> • 3.7m views • 6 days ago</div>
+			      	<button class="btn btn-outline-light mt-4"><i class="far fa-play-circle mr-2"></i>WATCH</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="channel-profile">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 text-left d-flex">
+							<img src="assets/img/games_ic.png" alt="">
+							<div class="channel-info">
+								<h4>Namaeb</h4>
+								<h6>29.7M subscribers</h6>
+							</div>
+						</div>
+						<div class="col-6 text-right">
+							<button class="btn btn-light">SUBSCRIBE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <div class="body-section">
+		      	<div class="container">
+		        	<div class="row">
+		          		<div class="jumbotron">
+		            		<h2><b>PROJECT G - DASHBOARD</b></h2>
+		            		<small><u>Namaeb De Creator.</u></small>
+		            		<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem quo obcaecati deleniti, nostrum nemo nobis libero placeat exercitationem culpa illum vel, sapiente odit labore earum tempore recusandae itaque magni a blanditiis impedit! Suscipit modi, quia cum?</h6>
+		            		<p>Made with <i class="fas fa-keyboard"></i> and <i class="far fa-hand-paper"></i></p>
+		          		</div>
+		          		<div class="top-live-game">
+		          			<div class="title">
+		          				<div class="col-6 text-left"><h5>Top live games</h5></div>
+		          				<div class="col-6 text-right"><a href=""><h6>View all</h6></a></div>
+		          			</div>
+		          			<div class="game-body-section">
+			          			<div class="game-item">
+			          				<img src="assets/img/product_img/channels4_profile.png" alt="">
+			          				<div class="game-info">
+			          					<h6>Valorant</h6>
+			          					<small>92k watching</small>
+			          				</div>
+			          			</div>	
+			          			<div class="game-item">
+			          				<img src="assets/img/product_img/channels4_profile (3).png" alt="">
+			          				<div class="game-info">
+			          					<h6>Grand theft auto 5</h6>
+			          					<small>55k watching</small>
+			          				</div>
+			          			</div>	
+			          			<div class="game-item">
+			          				<img src="assets/img/product_img/channels4_profile (1).png" alt="">
+			          				<div class="game-info">
+			          					<h6>Minecraft</h6>
+			          					<small>46k watching</small>
+			          				</div>
+			          			</div>	
+			          			<div class="game-item">
+			          				<img src="assets/img/product_img/channels4_profile (2).png" alt="">
+			          				<div class="game-info">
+			          					<h6>Apex legends</h6>
+			          					<small>37k watching</small>
+			          				</div>
+			          			</div>	
+			          			<div class="game-item">
+			          				<img src="assets/img/product_img/channels4_profile.jpg" alt="">
+			          				<div class="game-info">
+			          					<h6>Fortnite</h6>
+			          					<small>29k watching</small>
+			          				</div>
+			          			</div>	
+		          			</div>
+		          		</div>
+		          		<hr>
+		          		<div class="playstation-game">
+		          			<div class="title">
+		          				<div class="col-6 text-left"><h5>PlayStation State of Play Announcements</h5></div>
+		          				<div class="col-6 text-right"><a href=""><h6>View all</h6></a></div>
+		          			</div>
+		          			<div class="game-body-section">
+		          				<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (6).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Horizon</h6>
+				          					<small>92k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+		          				</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (7).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>No man's sky</h6>
+				          					<small>55k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (8).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Retribution</h6>
+				          					<small>46k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (9).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Resident evil village</h6>
+				          					<small>37k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault.webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Resident evil 4</h6>
+				          					<small>29k views • 2 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+		          			</div>
+		          		</div>
+		          		<hr>
+		          		<div class="lol-game">
+		          			<div class="title">
+		          				<div class="col-6 text-left"><h5>League of Legends</h5></div>
+		          				<div class="col-6 text-right"><a href=""><h6>View all</h6></a></div>
+		          			</div>
+		          			<div class="game-body-section">
+		          				<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/mqdefault_6s.webp" alt="">
+				          				<div class="game-info">
+				          					<h6>FINAL - RNG vs T1 | MSI 2022</h6>
+				          					<small>92k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+		          				</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/mqdefault_6s (1).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>GROUP STAGE - G2 vs SGB | MSI 2022</h6>
+				          					<small>55k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/mqdefault_6s (2).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>SEMI FINAL - T1 vs G2 | MSI 2022 </h6>
+				          					<small>46k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/mqdefault_6s (3).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Activation - LOL Esports</h6>
+				          					<small>37k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (11).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>SGB vs G2 highlight | MSI 2022 </h6>
+				          					<small>29k views • 2 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+		          			</div>
+		          		</div>
+		          		<hr>
+		          		<div class="recommended-game">
+		          			<div class="title">
+		          				<div class="col-6 text-left"><h5>Recommended</h5></div>
+		          				<div class="col-6 text-right"><a href=""><h6>View all</h6></a></div>
+		          			</div>
+		          			<div class="game-body-section">
+		          				<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (1).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Final fantasy XVI</h6>
+				          					<small>105k views • 1 day ago</small>
+				          				</div>
+				          			</div>		
+		          				</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (2).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Street fighter</h6>
+				          					<small>77k views • 2 days ago</small>
+				          				</div>
+				          			</div>		
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (3).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Tunic</h6>
+				          					<small>49k views • 2 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (4).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Spiderman: Bemaster</h6>
+				          					<small>66k views • 3 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (5).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>The call is to protocol</h6>
+				          					<small>29k views • 4 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+		          				<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (6).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Horizon</h6>
+				          					<small>92k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+		          				</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (7).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>No man's sky</h6>
+				          					<small>55k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (8).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Retribution</h6>
+				          					<small>46k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (9).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Resident evil village</h6>
+				          					<small>37k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault.webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Resident evil 4</h6>
+				          					<small>29k views • 2 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+		          			</div>
+		          		</div>
+		          		<hr>
+		          		<div class="top-trending-game">
+		          			<div class="title">
+		          				<div class="col-6 text-left"><h5>Top trending videos</h5></div>
+		          				<div class="col-6 text-right"><a href=""><h6>View all</h6></a></div>
+		          			</div>
+		          			<div class="game-body-section">
+		          				<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (1).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Final fantasy XVI</h6>
+				          					<small>105k views • 1 day ago</small>
+				          				</div>
+				          			</div>		
+		          				</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (2).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Street fighter</h6>
+				          					<small>77k views • 2 days ago</small>
+				          				</div>
+				          			</div>		
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (3).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Tunic</h6>
+				          					<small>49k views • 2 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (4).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Spiderman: Bemaster</h6>
+				          					<small>66k views • 3 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (5).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>The call is to protocol</h6>
+				          					<small>29k views • 4 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+		          				<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (6).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Horizon</h6>
+				          					<small>92k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+		          				</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (7).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>No man's sky</h6>
+				          					<small>55k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (8).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Retribution</h6>
+				          					<small>46k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+			          				<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault (9).webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Resident evil village</h6>
+				          					<small>37k views • 1 day ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>	
+			          			<a href="">
+				          			<div class="game-item">
+				          				<img src="assets/img/product_img/hqdefault.webp" alt="">
+				          				<div class="game-info">
+				          					<h6>Resident evil 4</h6>
+				          					<small>29k views • 2 days ago</small>
+				          				</div>
+				          			</div>	
+			          			</a>
+		          			</div>
+		          		</div>
+		          	</div>
+		      	</div>
+		    </div>
+		</div>
+
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	    <script src="assets/js/main.js"></script>
+	    <script src="assets/js/jquery.min.js"></script>
+	    <script src="assets/js/popper.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+	</body>
